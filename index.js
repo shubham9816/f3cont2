@@ -1,5 +1,5 @@
 const pageName = window.location.pathname;
-const isSignUpPage = pageName == '/signup-ui' || pageName == '/signup-ui/' || pageName == '/signup-ui/index.html';
+const isSignUpPage = pageName == '/f3cont2' || pageName == '/f3cont2/' || pageName == '/f3cont2/index.html';
 
 /**
  * Check user token
@@ -75,7 +75,7 @@ document.querySelector("form").onsubmit = (e) => {
         }
     }
 
-    // console.log("scsd")
+    console.log("scsd")
 
     const USER = {
         name,
