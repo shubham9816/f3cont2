@@ -8,9 +8,9 @@ const userInfo = window.localStorage.getItem("--USER-INFO--");
 const message =  window.localStorage.getItem("--USER-MESSAGE");
 
 if (userInfo && isSignUpPage) {
-    window.location.href = `https://wtricks.github.io/signup-ui/profile.html`
+    window.location.href = `https://shubham9816.github.io/f3cont2/profile.html`
 } else if (!userInfo && !isSignUpPage) {
-    window.location.href = `https://wtricks.github.io/signup-ui/`
+    window.location.href = `https://shubham9816.github.io/f3cont2/`
 }
 
 if (message) {
@@ -50,7 +50,7 @@ document.querySelector("form").onsubmit = (e) => {
     if (!isSignUpPage) {
         window.localStorage.removeItem("--USER-INFO--")
         window.localStorage.setItem("--USER-MESSAGE", "Logout successfully!");
-        window.location.href = `https://wtricks.github.io/signup-ui/`
+        window.location.href = `https://shubham9816.github.io/f3cont2/`
         return
     }
 
@@ -86,5 +86,5 @@ document.querySelector("form").onsubmit = (e) => {
 
     window.localStorage.setItem("--USER-INFO--", JSON.stringify(USER));
     window.localStorage.setItem("--USER-MESSAGE", "Signup successfully!");
-    window.location.href = `https://wtricks.github.io/signup-ui/profile.html`;
+    window.location.href = `https://shubham9816.github.io/f3cont2/profile.html`;
 }
